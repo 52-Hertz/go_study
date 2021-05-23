@@ -14,6 +14,7 @@ func main() {
 		fmt.Println("client dial err=", err)
 		return
 	}
+
 	for {
 		reader := bufio.NewReader(os.Stdin)
 		line, err := reader.ReadString('\n')
